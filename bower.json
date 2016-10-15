@@ -1,0 +1,24 @@
+{
+  "name": "node-ejs-boilerplate",
+  "description": "boilerplate for nodejs with ejs",
+  "main": "app.js",
+  "authors": [
+    "Manuel Abrante"
+  ],
+  "license": "ISC",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/components/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "font-awesome": "Font-Awesome#^4.6.3",
+    "jquery": "3.1.1",
+    "lodash": "^4.13.1"
+  }
+}

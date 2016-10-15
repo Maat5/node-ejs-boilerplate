@@ -1,0 +1,31 @@
+{
+  "name": "node-ejs-boilerplate",
+  "version": "1.0.0",
+  "description": "boilerplate for nodejs with ejs",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gulp"
+  },
+  "author": "Manuel Abrante",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.5.2",
+    "express": "^4.14.0",
+    "express-ejs-layouts": "^2.2.0",
+    "nib": "^1.1.0"
+  },
+  "devDependencies": {
+    "bower": "1.7.9",
+    "browser-sync": "^2.13.0",
+    "gulp": "3.9.1",
+    "gulp-clean": "0.3.2",
+    "gulp-concat": "2.6.0",
+    "gulp-flatten": "^0.3.1",
+    "gulp-minify-css": "1.2.4",
+    "gulp-nodemon": "^2.2.1",
+    "gulp-rename": "1.2.2",
+    "gulp-stylus": "2.5.0",
+    "gulp-uglify": "1.5.4"
+  }
+}
