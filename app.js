@@ -30,13 +30,16 @@ app.set('port', 3000);
 
 
 app.get('/', function(req, res) {
-  res.render('index');
+  res.render('components/app');
 });
 
-app.get('/assets/*', function(req, res) {
-  console.log('aqui')
-  res.sendFile('/', { root: './public/assets/' });
+app.get('/test', function(req, res){
+  res.render('components/test/algo');
 });
+// app.get('/assets/*', function(req, res) {
+//   console.log('aqui')
+//   res.sendFile('/', { root: './public/assets/' });
+// });
 
 app.listen(app.get('port'), function(e) {
   var host = this.address().address;

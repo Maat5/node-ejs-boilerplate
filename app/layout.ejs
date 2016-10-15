@@ -9,12 +9,14 @@
     <link rel="stylesheet" href="/assets/css/app.min.css" type="text/css" />
   </head>
   <body class="app">
+    <!-- Header -->
+    <% include ./shared/header %>
       <!-- Page Content -->
-        <div id="page-content-wrapper">
-          <%- defineContent('pageContent') %>
-        </div>
+        <%- defineContent('pageContent') %>
+        <%- defineContent('test') %>
         <!-- /#page-content-wrapper -->
-
+    <!-- Footer -->
+    <% include ./shared/footer %>
     <script src="js/libs.min.js"></script>
     <script src="js/app.min.js"></script>
   </body>
