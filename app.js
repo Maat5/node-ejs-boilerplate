@@ -4,24 +4,30 @@
 var express = require('express');
 var app = express();
 var expressLayouts = require('express-ejs-layouts');
+var bodyParser = require('body-parser');
 
 //enable https requests
 app.enable("trust proxy")
 //disables powered by express
 app.disable('x-powered-by');
+//serve static files
+app.use(express.static('public'));
 
 //views
 app.use(expressLayouts);
 app.set('views', process.cwd() + '/app');
 app.set('view engine', 'ejs');
 
-app.set('layout', 'index');
+app.set('layout', 'layout');
+
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({
+  extended: true
+}));
 
 //server port
 app.set('port', 3000);
 
-//serve static files
-app.use(express.static('public'));
 
 app.get('/', function(req, res) {
   res.render('index');
